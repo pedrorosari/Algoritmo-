@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <Center> <h1>Falculdade</h1>
+    <input type="number" id="ipt_enem" placeholder="Nota do Enem"> 
+    <input type="number" id="ipt_prova" placeholder="Nota do vestibular interno"> <br> <br>
+    <button onclick="avaliar()">Avaliar</button></Center>
+</body>
+</html>
+<script>
+        function avaliar() {
+            if (ipt_enem.value >= 800 || ipt_prova.value >= 700) {
+                alert("Parabéns! Aprovado")
+            }else{
+                alert("Tente semestre que vem")
+            }
+            
+        }
+
+
+
+
+</script>

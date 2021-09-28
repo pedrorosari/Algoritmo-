@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista02-ex1</title>
+</head>
+<body>
+    <input id="ipt_cidade" placeholder="Cidade de Nascimento" >
+    <input id="ipt_ano" placeholder="Ano de Nascimento">
+    <br>
+    <button onclick="cadastrar()">Cadastrar</button>
+    <br>
+    <div id="div_msg"></div>
+</body>
+</html>
+<script>
+    function cadastrar() {
+        div_msg.innerHTML += "Você nasceu na cidade de " + "<b>" + ipt_cidade.value + "</b>" + " em <u>" + ipt_ano.value + "</u> <br>"
+    }
+</script>

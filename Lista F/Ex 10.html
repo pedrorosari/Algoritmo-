@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center> <h1>Empresas</h1>
+    <input type="text" id="ipt_empresa" placeholder="Insira o nome da Empresa" style="text-align:center">
+    <input type="number" id="ipt_bolsa" placeholder="Insiria valor da Bolsa" style="text-align: center;">
+    <input type="number" id="ipt_vr"    placeholder="Insira o valor do VR" style="text-align: center;">
+    <input type="number" id="ipt_tempo" placeholder="Tempo de deslocamento em minutos" style="text-align: center;">
+    <button onclick="Analisar()">É preferida?</button>
+    <div id="div_msg"></div>
+</center>
+</body>
+</html>
+<script>
+    function Analisar() {
+            if (ipt_bolsa.value >= 1800 || ipt_vr.value >= 20 || ipt_tempo.value <= 30) {
+                div_msg.innerHTML= `A empresa ${ipt_empresa.value}  é uma de suas preferências`
+            }else{
+                div_msg.innerHTML= `A empresa ${ipt_empresa.value} está fora da sua lista`
+            }
+        
+    }
+
+</script>

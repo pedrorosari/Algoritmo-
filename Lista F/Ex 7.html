@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="slt_transporte">
+            <option value="onibus">Ônibus</option>
+            <option value="metro">Metrô</option>
+            <option value="carro">Carro</option>
+            <option value="bicicleta">Bicicleta</option>
+            <option value="lotaçao">Lotação</option>
+    </select>
+    <button onclick="calcular()">Calcular Cansaço</button>
+    <div id="div_msg"></div>
+</body>
+</html>
+<script>
+            function calcular() {
+                if (slt_transporte.value == "carro" || slt_transporte.value == "bicicleta") {
+                    div_msg.innerHTML = "Tá tranquilo"
+                }else if (slt_transporte.value == "onibus" || slt_transporte.value == "lotaçao"){
+                    div_msg.innerHTML = "Vish... vive cansado"
+                }else{
+                    div_msg.innerHTML = "Um pouco cansado"
+                }
+            }
+
+
+
+</script>
